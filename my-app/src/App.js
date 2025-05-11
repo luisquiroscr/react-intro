@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-
+//1. Los Componentes son Funciones que retornan HTML
+//2. Recrdar los parentesis
+//3. Clases con CSS van cn className
 function App() {
   return (
     <div className="App">
