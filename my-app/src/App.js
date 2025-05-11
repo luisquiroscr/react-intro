@@ -16,8 +16,19 @@ function HelloWorld() {
   );
 }
 
+
+const entrada = ['a', 'b', 'c'];
 //  ci esto es cierto && continua con lo de la derecha
 function App() {
+
+const parrafos = entrada.map(elemento => {
+    return ( 
+    <div>
+    <p>{elemento}</p>
+    
+    </div> ); 
+  });
+
 
    const logotipo = logo;
 
@@ -68,7 +79,14 @@ function App() {
 {contador > 5 && <p>El contador es mayor a 5</p>} */}
 
 {contador < 5? <p>El contador es menor a 5</p> : 'El contador es mayor a 5'}
+        
+<h1>Estos son los elementos:</h1>
+{parrafos}
+        
           </div>
+
+
+
           
   );
 }
