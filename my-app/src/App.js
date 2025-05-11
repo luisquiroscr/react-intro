@@ -16,15 +16,21 @@ function HelloWorld() {
   );
 }
 
-
+//  ci esto es cierto && continua con lo de la derecha
 function App() {
 
    const logotipo = logo;
+
+   const mostrarImagen = true;
+
    const nombre = "Hello World";
 
   return (
     <div className="App">
       <header className="App-header">
+
+        
+
         <img src={logotipo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -39,7 +45,12 @@ function App() {
         </a>
       </header>
       <HelloWorld />
+      <div>
+        {mostrarImagen && <span>Mostrar Imagen</span>}
+      </div>
+      
           </div>
+          
   );
 }
 
