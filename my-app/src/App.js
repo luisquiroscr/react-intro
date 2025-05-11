@@ -18,9 +18,25 @@ function HelloWorld() {
 
 
 const entrada = ['a', 'b', 'c'];
-//  ci esto es cierto && continua con lo de la derecha
-function App() {
+//  si esto es cierto && continua con lo de la derecha
 
+const menuGithub = [
+
+];
+
+const opcionesMenu = [{
+
+  id: 1, texto: 'Code', link: '/', isSelected: true
+}, {
+  id: 2, texto: 'Issues', link: '/issues', isSelected: false
+}, {
+  id:3, texto: 'Pull-requests', link: '/pulls', isSelected: false
+}, {
+  id: 4, texto: 'Contact', link: '/contact', isSelected: false
+}  ]
+
+function App() {
+//Listas de cosas
 const parrafos = entrada.map(elemento => {
     return ( 
     <div>
@@ -29,7 +45,15 @@ const parrafos = entrada.map(elemento => {
     </div> ); 
   });
 
+  const menu = opcionesMenu.map(elemento => {
+    return (
+      <>
+      {elemento.texto}
+      </>
+    );
+  });
 
+ 
    const logotipo = logo;
 
    const mostrarImagen = false;
@@ -82,7 +106,10 @@ const parrafos = entrada.map(elemento => {
         
 <h1>Estos son los elementos:</h1>
 {parrafos}
-        
+
+
+<h1>Estos son los elementos del menu:</h1>
+{menu}
           </div>
 
 
