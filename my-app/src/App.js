@@ -3,11 +3,29 @@ import './App.css';
 //1. Los Componentes son Funciones que retornan HTML
 //2. Recrdar los parentesis
 //3. Clases con CSS van cn className
+//4. Referencias de JS van dentro de llaves {}
+//5. Parentesis HTML y Llaves Variables de Js
+//6. Llaves sustituyen v-bind o {{}} de vue
+
+function HelloWorld() {
+  const nombre = 'Luis Fernando';
+  return (
+    <div> 
+      <h1>Hello {nombre}</h1>
+    </div>
+  );
+}
+
+
 function App() {
+
+   const logotipo = logo;
+   const nombre = "Hello World";
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logotipo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -20,7 +38,8 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+      <HelloWorld />
+          </div>
   );
 }
 
