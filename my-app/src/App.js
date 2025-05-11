@@ -55,9 +55,9 @@ const parrafos = entrada.map(elemento => {
 
   const menu = opcionesMenu.map(elemento => {
     return (
-      <>
-      {elemento.texto}
-      </>
+      <p>
+      {elemento.texto} {elemento.isSelected ? (<b>*</b>) : ''}
+      </p>
     );
   });
 
