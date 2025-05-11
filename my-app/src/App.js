@@ -21,7 +21,7 @@ function App() {
 
    const logotipo = logo;
 
-   const mostrarImagen = true;
+   const mostrarImagen = false;
 
    const nombre = "Hello World";
 
@@ -46,7 +46,12 @@ function App() {
       </header>
       <HelloWorld />
       <div>
-        {mostrarImagen && <span>Mostrar Imagen</span>}
+        {/*React*/}
+        {/* {mostrarImagen && <img src={logotipo} className="App-logo" alt="logo" />} */}
+      {mostrarImagen? <img src={logotipo} className="App-logo" alt="logo" /> : 'No hay Imagen que Mostrar'}
+      {/*Vue*/}
+      {/* <img v-if="mostrarImagen" src={logotipo} className="App-logo" alt="logo" />
+      <span v-else>No hay Imagen</span> */}
       </div>
       
           </div>
