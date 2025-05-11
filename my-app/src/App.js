@@ -23,7 +23,7 @@ function App() {
 
    const mostrarImagen = false;
 
-   const contador = 6;
+   const contador = 0;
 
 
 
@@ -64,9 +64,10 @@ function App() {
       <span v-else>No hay Imagen</span> */}
       </div>
       
-{contador < 5 && <p>El contador es menor a 5</p>}
-{contador > 5 && <p>El contador es mayor a 5</p>}
+{/* {contador < 5 && <p>El contador es menor a 5</p>}
+{contador > 5 && <p>El contador es mayor a 5</p>} */}
 
+{contador < 5? <p>El contador es menor a 5</p> : 'El contador es mayor a 5'}
           </div>
           
   );
