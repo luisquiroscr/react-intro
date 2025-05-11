@@ -23,7 +23,17 @@ function App() {
 
    const mostrarImagen = false;
 
-   const nombre = "Hello World";
+   const contador = 6;
+
+
+
+
+  //Si el contador es menor a 5, imprimir un mensaje que diga
+  //"El contador es menor a 5"
+  //Si el contador es mayor a 5, imprimir un mensaje que diga
+  //"El contador es mayor a 5"
+
+  const nombre = "Hello World";
 
   return (
     <div className="App">
@@ -54,6 +64,9 @@ function App() {
       <span v-else>No hay Imagen</span> */}
       </div>
       
+{contador < 5 && <p>El contador es menor a 5</p>}
+{contador > 5 && <p>El contador es mayor a 5</p>}
+
           </div>
           
   );
