@@ -45,6 +45,14 @@ const parrafos = entrada.map(elemento => {
     </div> ); 
   });
 
+//mostrar todos los elementos del menu
+//agregar id, poner al link como href
+//si esta seleccionado, poner un *
+
+
+
+
+
   const menu = opcionesMenu.map(elemento => {
     return (
       <>
